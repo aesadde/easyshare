@@ -1,0 +1,118 @@
+<p>Tags:: [[Crypto]] [[DeFi]] [[Web3]]</p>
+<ul>
+<li>Core collapsed:: true
+<ul>
+<li>Public Key Cryptography</li>
+<li>Consensus id:: 6174529e-b8e2-4fe5-a36c-8bbf5e8e4f5c
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Proof_of_work">Proof-of-work</a> collapsed:: true
+<ul>
+<li>Proof of work algorithms were originally designed to fight spam email and Denial of service attacks. The idea is that a computer needs to do a certain amount of work before it is able to perform a request to a server or send an email with the hope of deterring malicious use.</li>
+<li>For example a DoS attack works by overflowing a server with requests but if you need to perform hundreds of CPU cycles for just one request you’ll think twice about before sending thousands of requests</li>
+<li>In more <a href="https://en.wikipedia.org/wiki/Proof_of_work">technical terms</a>:
+<ul>
+<li><blockquote>
+<p>Proof of work (PoW) is a form of cryptographic zero-knowledge proof in which one party (the prover) proves to others (the verifiers) that a certain amount of a specific computational effort has been expended. Verifiers can subsequently confirm this expenditure with minimal effort on their part. The concept was invented by Cynthia Dwork and Moni Naor in 1993</p>
+</blockquote></li>
+</ul></li>
+<li>The concept of PoW is similar to [[Public Key Cryptography]] in that the system is asymmetric, requiring a lot of work on one side (doing the work or ciphering) and minimal work on the other (verifying, deciphering).</li>
+<li><a href="https://en.wikipedia.org/wiki/Hashcash">Hashcash</a> is a popular PoW algorithm and it is the one used by [[Bitcoin]] to mine new coins
+<ul>
+<li>It works by making the miner compute a X-bit hash of a given string where the leading Y bits need to be zero. An X-bit hash allows a total of <span class="math inline">2<sup><em>x</em></sup></span> different values of which <span class="math inline">2<sup><em>x</em> − <em>y</em></sup></span> will satisfy the algorithm. Depending on the size of <span class="math inline"><em>x</em></span> most computers will be able to find a value that satisfies the algorithm’s rule in a short amount of time (seconds or minutes). The cool part is that as time goes by the algorithm can be tweaked to request more and more leading zeroes, making it more difficult to the miners over time. This is—very simplistically—how bitcoin works</li>
+</ul></li>
+<li>One problem with PoW especially in crypto is that, over time, it tends to be very energy intensive since miners need to perform an increasing amount of work to find valid hashes. As an alternative to this, <a href="((61760201-83f3-4de0-9212-e19a6779a742))">proof-of-stake</a> has been gaining popularity in certain protocols</li>
+<li>refs:
+<ul>
+<li>https://www.youtube.com/watch?v=3EUAcxhuoU4</li>
+<li>https://coinmarketexpert.com/guides/staking-everything-you-need-to-know-about-staking-in-2020/</li>
+</ul></li>
+</ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Proof_of_stake">Proof-of-stake</a> id:: 61760201-83f3-4de0-9212-e19a6779a742
+<ul>
+<li>As an alternative to PoW which consumes a lot of energy, proof-of-stake (PoS) protocols were proposed and are finding their way into popular blockchains like the Ethereum (ETH) blockchain</li>
+<li>The core idea is that instead of requiring a lot of work by and verification by the miners, nodes are selected as “validators” based on the amount of tokens the deposit, or “stake”, of the currency they have.</li>
+<li>With this approach the goal is to have a protocol that (1) uses less energy and (2) is more efficient since miners can’t come together in “mining pools” and enjoy the benefits of economies of scale to reap the rewards of mining (cost of electricity doesn’t grow linearly so mining pools as they grow will have an outsized chance of creating new blocks and getting the fees). With proof-of-stake the chances of validating the new block are linear (based on the amount of the currency one holds).</li>
+<li>Other benefits include a protection against centralization of the system since the cost of becoming a validator is much less than that of becoming a miner (cost of specialized hardware, etc.)</li>
+<li>refs:
+<ul>
+<li>youtube.com/watch?v=M3EFi_POhps</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Blockchain
+<ul>
+<li>A blockchain is a distributed ledger of transactions that occur over a network</li>
+<li>Key features:
+<ul>
+<li>immutable: it is immutable because every transaction is recorded on the ledger and the nodes connected to the network need to agree on them. Once there is consensus a transaction cannot be</li>
+<li>decentralized: one of the key problems that Bitcoin solved was that of <a href="((6174529e-b8e2-4fe5-a36c-8bbf5e8e4f5c))">“distributed consensus”</a> paving the way for truly decentralized networks where there aren’t central nodes that have ownership or more responsibilities than others. In a decentralized network the state of the network is shared across the nodes that connect to it. Everybody participates and for the network to work everybody needs to agree on a certain state of the world.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Wallets collapsed:: true
+<ul>
+<li>A digital version of a wallet where you keep all your crypto currencies and enable you to send and receive</li>
+<li>They work by keeping your private key secret and allowing to verify transactions that were signed with your public key (crypto runs on [[Public Key Cryptography]])</li>
+<li>The most secure ones are hardware wallets (think of a[[Yubikey]]) but are harder to use and integrate with exchanges and services</li>
+<li><blockquote>
+<p>crypto wallets technically don’t store your crypto. Your holdings live on the blockchain, but can only be accessed using a private key. Your keys prove your ownership of your digital money and allow you to make transactions. If you lose your private keys, you lose access to your money. That’s why it’s important to keep your hardware wallet safe, or use a trusted wallet provider like Coinbase.</p>
+</blockquote>
+<ul>
+<li>ref: https://www.coinbase.com/learn/crypto-basics/what-is-a-crypto-wallet</li>
+</ul></li>
+<li>Common wallets:
+<ul>
+<li>Metamask</li>
+<li>Brave Wallet</li>
+<li>Coinbase Wallet</li>
+<li>Hardware
+<ul>
+<li>Ledger</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Exchanges</li>
+<li>[[DeFi]]
+<ul>
+<li>Staking, Pledge, Deposit collapsed:: true
+<ul>
+<li><blockquote>
+<p>crypto staking is the process of keeping funds in a cryptocurrency wallet (or staking pool) to help the underlying proof-of-stake blockchain network operate more efficiently and securely</p>
+</blockquote></li>
+<li>In the context of <a href="((61744bf1-788c-4444-8fe3-062e6b2d21d3))">DAOs</a> what I understand is that staking—freezing a number of coins—gives you certain voting rights in the DAO based on the total number of tokens in the DAO. The tokens are dilatable as new tokens are minted</li>
+<li>Important things to consider when staking:
+<ul>
+<li>inflation rate of the coin (how many new coins are minted over time)</li>
+<li>Staking gives you rewards in the form of APY interest but the main purpose of it is to <em>“act as a powerful governance and participation system.”</em></li>
+<li></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>[[NFT]]s</li>
+<li>Play-to-Earn</li>
+<li>[[DApp]]s</li>
+<li>[[DAO]]s id:: 61744bf1-788c-4444-8fe3-062e6b2d21d3</li>
+<li>[[Smart Contracts]]</li>
+<li>Protocols
+<ul>
+<li>[[IPFS]] or InterPlanetary File System
+<ul>
+<li>This looks akin to other P2P protocols of the past like Bit Torrent</li>
+<li>The idea is for all of us to become not only consumers of the Internet but also its hosts—once again one might say since web1 was decentralized, web2 is very centralized (Google, Facebook, etc), and web3, we hope, is going to be decentralized once again.</li>
+<li>The objective of this protocol is to bring us all a step closer to a fully decentralized and more resilient internet that can be robust against attacks (if a DDoS attack reaches Wikipedia, it goes down and nobody can access it, using IPFS this is prevented) and censorhip (governments now can just block a few routes and servers, using IPFS it will be way more difficult for them to do so)</li>
+<li>The most interesting part of the protocol is the [[Content addressing]]. It totally changes the game because now things are addressable by a hash of their content and not their location. This makes sense if anybody can host pieces of the data</li>
+<li>refs:
+<ul>
+<li>https://github.com/ipfs/awesome-ipfs</li>
+<li>https://docs.ipfs.io/concepts/usage-ideas-examples/</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li></li>
+<li>References:
+<ul>
+<li><a href="https://dappradar.com/rankings">List of top dApps</a></li>
+<li></li>
+<li></li>
+</ul></li>
+</ul>

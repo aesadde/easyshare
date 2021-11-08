@@ -1,0 +1,12 @@
+$if(image)$
+<div style="text-align: center;">
+    <img src="$image$" alt="main-image"/>
+</div>
+$endif$
+$if(toc)$
+<nav class="table-of-contents" id="$idprefix$table-of-contents" role="doc-toc">
+    <h3 id="$idprefix$toc-title">Table Of Contents</h3>
+    $table-of-contents$
+</nav>
+$endif$
+$body$
